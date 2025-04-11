@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   
   body {
@@ -175,5 +175,58 @@
     padding: 20px;
     font-size: 0.9rem;
     margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .perfil {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .perfil-imagen img {
+      width: 180px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .card .container {
+      padding: 20px;
+    }
+  
+    .contenedor-experiencia,
+    .contenedor-formacion {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cta-button .boton {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
   }
   
