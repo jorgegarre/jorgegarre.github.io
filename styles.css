@@ -230,3 +230,61 @@
     }
   }
   
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 999;
+  transition: background-color 0.3s;
+}
+
+.boton-flotante:hover {
+  background-color: #0056b3;
+}
+
+.mensaje-scroll {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc107;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.perfil-imagen img {
+  width: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.perfil-imagen img:hover {
+  transform: scale(1.1);
+}
+
+dialog#welcomeModal {
+  border: none;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+dialog#welcomeModal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
